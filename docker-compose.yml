@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    volumes:
+      - ./mysqldata:/var/lib/mysql
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    environment:
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
