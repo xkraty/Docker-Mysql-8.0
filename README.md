@@ -1,6 +1,11 @@
 # Docker-Mysql-8.0
 Docker Mysql 8.0 for development environment
 
+## Requirements
+```
+brew install mysql-connector-c
+```
+
 ## Running mysql
 ```
 docker-compose up
